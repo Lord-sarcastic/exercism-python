@@ -7,12 +7,4 @@ def personal_best(scores):
 
 
 def personal_top_three(scores):
-    top = []
-    for i in range(3):
-        try:
-            top.append(max(scores))
-        except ValueError:
-            break
-        else:
-            scores.remove(max(scores))
-    return top
+    return sorted(scores, reverse=True)[:3]
