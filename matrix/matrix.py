@@ -7,10 +7,6 @@ class Matrix:
         return self.matrix[index - 1]
 
     def column(self, index):
-        pass
+        values = list(zip(*self.matrix))
+        return [i for i in values[index - 1]]
 
-Matrix('''
-1 2 3
-2 3 4
-3 4 5
-''')
