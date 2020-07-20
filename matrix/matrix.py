@@ -1,6 +1,6 @@
 class Matrix:
     def __init__(self, matrix_string):
-        matrix_list = matrix_string.split('\n')[1:-1]
+        matrix_list = matrix_string.split('\n')
         self.matrix = [[int(j) for j in i.split()] for i in matrix_list]
 
     def row(self, index):
