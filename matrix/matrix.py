@@ -4,7 +4,7 @@ class Matrix:
         self.matrix = [[int(j) for j in i.split()] for i in matrix_list]
 
     def row(self, index):
-        pass
+        return self.matrix[index - 1]
 
     def column(self, index):
         pass
